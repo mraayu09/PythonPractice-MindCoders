@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+    float cost,dis,netamount;
+    printf("enter the cost of the product");
+    scanf("%f",&cost);
+    dis=cost*10/100;
+    if (cost>=5000)
+       printf("discount price is",dis);
+    else
+       printf("no discount available");
+
+    netamount=cost-dis;
+    
+    printf("\n final price is %f",netamount);
+       
+       
+}
