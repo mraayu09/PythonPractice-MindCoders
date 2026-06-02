@@ -76,14 +76,65 @@
 # print(phonebook)
 #-------------------------------------------------------------------------------------
 
-pol_eng_dictionary = {"kwiat": "flower"}
+# pol_eng_dictionary = {"kwiat": "flower"}
 
-pol_eng_dictionary.update(
-         {
-             "gleba": "soil"
-        })
-print(pol_eng_dictionary) 
+# pol_eng_dictionary.update(
+#          {
+#              "gleba": "soil"
+#         })
+# print(pol_eng_dictionary) 
 
-pol_eng_dictionary.popitem()
+# pol_eng_dictionary.popitem()
 
-print(pol_eng_dictionary)
+# print(pol_eng_dictionary)
+#-------------------------------------------------------------------------------------
+
+# pol_eng_dictionary = {
+#                         "zamek": "castle",
+#                         "woda": "water",
+#                         "gleba": "soil"
+#                     }
+# print(pol_eng_dictionary)
+# print(len(pol_eng_dictionary)) 
+
+# del pol_eng_dictionary["zamek"] 
+# print(pol_eng_dictionary)
+# print(len(pol_eng_dictionary)) 
+
+# pol_eng_dictionary.clear() 
+# print(pol_eng_dictionary)
+# print(len(pol_eng_dictionary))
+
+# # del pol_eng_dictionary 
+# # print(pol_eng_dictionary)
+
+#------------------------------------------------------------
+
+student_details={}
+
+while True:
+
+    name=input("enter student name:")
+    if name == "":
+        break
+    
+    score=int(input(f"enter {name}'s score:"))
+
+    if score not in range(1,11):
+        break
+
+    if name in student_details:
+        student_details[name] += (score,)
+
+    else:
+        student_details[name] = (score,)    
+
+print(student_details)
+
+for name,mark in student_details.items():
+    sum = 0
+    for m in mark:
+        sum += m
+
+    print(name, "-->", sum/len(mark))    
+
