@@ -194,3 +194,57 @@
 # print(obj.var_b, obj.fun_b())
 #-------------------------------------------------------
 
+# # # multilevel inheritence
+# # class Level1:tiple Inheritance Conflicts
+# class Left:
+#     var = "L"
+#     var_left = "LL"
+#     def fun(self):
+#         return "Left"
+# class Right:
+#     var = "R" # Same name as Left.var
+#     var_right = "RR"
+#     def fun(self): # Same name as Left.fun()
+#         return "Right"
+# class Sub(Left, Right):
+#     pass
+# obj = Sub()
+# print(obj.var, obj.var_left, obj.var_right, obj.fun())
+#---------------------------------------------------------------------
+#     var = 100
+#     def fun(self):
+#         return 101
+    
+# class Level2(Level1):
+#     var = 200                 # Overrides Level1.var
+#     def fun(self):            # Overrides Level1.fun()
+#         return 201
+    
+# class Level3(Level2):
+#     pass
+
+# obj = Level3()
+# print(obj.var, obj.fun())
+# # bottom to top apprach par kaam karta h jo bhi functiom last me call hoga whi print ho jayga
+#====------------------------------------------------------------------------
+
+#Mul
+#--------------------------------------------------------
+
+# class One:
+#     def do_it(self):
+#         print("do_it from One")
+
+#     def doanything(self):
+#         self.do_it()
+
+# class Two(One):
+#     def do_it(self):
+#         print("do_it from Two")
+
+# one = One()
+# two = Two()
+# one.doanything() 
+# two.doanything()
+#-------------------------------------------------------------
+
