@@ -139,6 +139,58 @@
 # print(obj.variable_3, obj.var_3, obj.fun_3())  
 #-----------------------------------------------------------
 
-v=input("enter your word : ")
-print("I Am",v,"better than you.")
-print(4*(f"{v} ")+v)
+# v=input("enter your word : ")
+# print("I Am",v,"better than you.")
+# print(4*(f"{v} ")+v)
+#------------------------------------------------------
+
+# class Super:
+#     def __init__(self,name):
+#         self.name= name
+
+#     def __str__(self):
+#         return "My name is "+ self.name + "."
+    
+# class Sub(Super):
+#     def __init__(self,name):
+#         Super.__init__(self,name)
+
+# obj = Sub("Andy")
+# print(obj)
+#----------------------------------------------------
+
+
+# class Super:
+#     def __init__(self,name):
+#         self.name= name
+
+#     def __str__(self):
+#         return "My name is "+ self.name + "."
+    
+# class Sub(Super):
+#     def __init__(self,name):
+#         super().__init__(name)
+
+# obj = Sub("Andy")
+# print(obj)
+#--------------------------------------------
+
+# MUltiple inheritence example
+# class SuperA:
+#     var_a = 10
+#     def fun_a(self):
+#         return 11
+    
+# class SuperB:
+#     var_b = 20
+#     def fun_b(self):
+#         return 21
+    
+# class Sub(SuperA, SuperB):
+#     pass
+
+# obj = Sub()
+# print(obj.var_a, obj.fun_a()) 
+# print(obj.var_b, obj.fun_b())
+#-------------------------------------------------------
+
