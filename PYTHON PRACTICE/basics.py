@@ -21,4 +21,9 @@
 #  print("Hello,i am",name,". i am a ",profession,"professionally.And my age is ",age)
 
 
-print("changes")
+# print("changes")
+
+with open("data.txt", "r") as file:
+    data = file.read()
+
+print(data)
